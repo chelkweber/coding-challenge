@@ -1,3 +1,38 @@
 .activity-feed {
+  width: 90%;
+  margin: 0 auto;
+/*
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+*/
+}
+
+.activity-feed li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.activity-feed .feed-item__num {
+  width: 50px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.activity-feed .feed-item__content {
   
+}
+
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
 }
