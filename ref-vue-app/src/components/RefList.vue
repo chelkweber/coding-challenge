@@ -1,7 +1,7 @@
 <template>
   <div class="ref-list">
     <ul>
-      <RefLink v-for="link in links"></RefLink>
+      <RefLink v-on:deleteLink="deleteLink" v-for="link in links" :link.sync="link"></RefLink>
     </ul>
   </div>
 </template>
@@ -17,6 +17,12 @@
         },
         components: {
           RefLink
+        },
+        methods: {
+          deleteLink(link) {
+            var linkIndex = this.links.indexOf(link);
+            this.links.splice(linkIndex, 1);
+          }
         }
     }
 </script>
