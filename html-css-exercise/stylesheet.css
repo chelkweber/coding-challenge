@@ -1,3 +1,124 @@
 .activity-feed {
+  width: 90%;
+  margin: 0 auto;
+  font-family: helvetica;
+}
+
+.activity-feed ul {
+  padding: 0;
+}
+
+.activity-feed li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
   
+  margin-top: 12px;
+  position: relative;
+}
+
+.activity-feed .feed-item__num {
+  width: 40px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.feed-item__num p {
+  font-size: 20px;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  background-color: green;
+  margin: 0 auto;
+  width: 20px;
+  flex-grow: 1;
+}
+
+.feed-item__num .divider-line {
+  display: block;
+  width: 0;
+  height: 100%;
+  border: 1px grey solid;
+  flex-grow: 2;
+}
+
+ul .feed-item:nth-of-type(2) .feed-item__num p{
+  background-color: orange;
+}
+
+ul .feed-item:nth-of-type(3) .feed-item__num p{
+  background-color: red;
+}
+
+.activity-feed .feed-item__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  
+  border: grey 1px solid;
+  padding: 12px;
+  width: 100%;
+}
+
+.content__date {
+  font-size: 14px;
+}
+
+.content__text {
+  padding-right: 12px;
+}
+
+.content__text h1 {
+  font-size: 16px;
+}
+
+.content__text h1 a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+.content__text p {
+  font-size: 14px;
+  color: grey;
+}
+
+
+
+@media only screen and (min-width: 600px) {  
+  .activity-feed .feed-item__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  
+  .content__date {
+    order: 2;
+  }
+  
+  .content__text h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
 }
