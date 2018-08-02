@@ -1,8 +1,10 @@
 <template>
   <li class="ref-link">
-    <p v-if="!isEditing" v-on:click="increaseCount">{{link.link}}</p>
+    <p v-if="!isEditing" v-on:click="updateInfo(link)">
+      <router-link to="/landing">{{link.link}}</router-link>
+    </p>
     <input type='text' v-model="link.link" v-if="isEditing">
-    <p>{{count}}</p>
+    <p v-on:click="link.count++">{{link.count}}</p>
     <button v-on:click="showForm" v-if="!isEditing">Edit</button>
     <button v-on:click="hideForm" v-if="isEditing">Save</button>
     <button v-on:click="deleteLink(link)">Delete</button>
@@ -14,7 +16,6 @@
       props: ['link'],
       data () {
         return {
-          count: 0,
           isEditing: false
         }
       }, 
@@ -27,11 +28,11 @@
         hideForm() {
           this.isEditing = false;
         },
-        increaseCount() {
-          this.count++
-        },
         deleteLink(link) {
           this.$emit('deleteLink', link);
+        },
+        updateInfo(link) {
+          this.$emit('updateInfo', link);
         }
       }
     }

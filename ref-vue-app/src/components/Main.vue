@@ -19,11 +19,14 @@
       return {
         links: [
         {
-          link: 'Spartans'
+          link: 'Spartans',
+          count: 0
         }, {
           link: 'Wolverines',
+          count: 0
         }, {
           link: 'Green Wave',
+          count: 0
         }],
     };
   },
