@@ -1,7 +1,7 @@
 <template>
-  <div class="ref-link">
+  <li class="ref-link">
     <p>This is a Ref Link</p>
-  </div>
+  </li>
 </template>
 
 <script>

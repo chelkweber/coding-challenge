@@ -1,18 +1,21 @@
 <template>
   <div class="main">
-    <p>This is the Main page</p>
+    <h1>Grow the Web with Refferals!</h1>
+    <Form></Form>
+    <RefList></RefList>
   </div>
 </template>
 
 <script>
-    export default {
-        data () {
-            return {
-            }
-        },
-        components: {
-        }
+  import Form from './Form'
+  import RefList from './RefList'
+  
+  export default {
+    components: {
+      RefList,
+      Form
     }
+  }
 </script>
 
 <style>

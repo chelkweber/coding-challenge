@@ -1,16 +1,21 @@
 <template>
   <div class="ref-list">
-    <p>This is the Ref List</p>
+    <ul>
+      <RefLink></RefLink>
+    </ul>
   </div>
 </template>
 
 <script>
+    import RefLink from './RefLink'
+    
     export default {
         data () {
             return {
             }
         },
         components: {
+          RefLink
         }
     }
 </script>
