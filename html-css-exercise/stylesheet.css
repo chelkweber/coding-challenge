@@ -16,11 +16,17 @@
 }
 
 .activity-feed .feed-item__num {
-  width: 50px;
+  width: 20px;
   flex-shrink: 0;
   flex-grow: 0;
   
   font-size: 20px;
+  color: white;
+  padding: 12px;
+  margin-right: 12px;
+  border-radius: 10px;
+  background-color: red;
+  text-align: center;
 }
 
 .activity-feed .feed-item__content {
