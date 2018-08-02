@@ -2,7 +2,7 @@
   <div class="main">
     <h1>Grow the Web with Refferals!</h1>
     <Form  v-on:createLink="createLink"></Form>
-    <RefList v-bind:links=" links"v-on:updateMain="updateMain(links)"></RefList>
+    <RefList v-bind:links="links" v-on:sendToLandingPage="sendToLandingPage"></RefList>
   </div>
 </template>
 
@@ -35,9 +35,9 @@
       createLink(newLink) {
         this.links.push(newLink);
       },
-      updateMain(links) {
-        this.links = links;
-        console.log(this.links);
+      sendToLandingPage(linkName) {
+        console.log(linkName + 'main');
+        this.$emit('sendToLandingPage', linkName);
       }
     }
   }

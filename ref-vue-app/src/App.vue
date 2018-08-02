@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <router-link :to="{ name: 'Main' }" v-bind:links=" links">Main</router-link>
+    <router-link :to="{ name: 'Main' }">Main</router-link>
     <router-link to="/landing">Landing</router-link>
-    <router-view></router-view>
+    <router-view v-on:sendToLandingPage="sendToLandingPage" v-bind:linkName="linkName"></router-view>
   </div>
 </template>
 
@@ -12,21 +12,17 @@
     name: 'App',
     components: {
     },
-    data() {
-        return {
-          links: [
-          {
-            link: 'Spartans',
-            count: 0
-          }, {
-            link: 'Wolverines',
-            count: 0
-          }, {
-            link: 'Green Wave',
-            count: 0
-          }],
-        };
+    data () {
+      return {
+        linkName: ''
       }
+    },
+    methods: {
+      sendToLandingPage(linkName) { 
+        this.linkName = linkName;
+        console.log(this.linkName);
+      }
+    }
     }
 </script>
 

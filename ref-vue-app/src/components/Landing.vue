@@ -1,11 +1,12 @@
 <template>
   <div class="landing">
-    <p>This is the Landing page</p>
+    <p>Welcome {{linkName}}</p>
   </div>
 </template>
 
 <script>
     export default {
+        props: ["linkName"],
         data () {
             return {
             }

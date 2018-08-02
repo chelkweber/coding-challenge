@@ -1,7 +1,7 @@
 <template>
   <div class="ref-list">
     <ul>
-      <RefLink v-on:deleteLink="deleteLink" v-on:updateInfo="updateInfo(link)" v-for="link in links" :link.sync="link"></RefLink>
+      <RefLink v-on:deleteLink="deleteLink" v-on:sendToLandingPage="sendToLandingPage" v-for="link in links" :link.sync="link"></RefLink>
     </ul>
   </div>
 </template>
@@ -31,9 +31,8 @@
             //console.log(this.links);
             this.updateMain(this.links);
           },
-          updateMain(links) {
-            //console.log(links);
-            this.$emit('updateMain', links);
+          sendToLandingPage(linkName) {
+            this.$emit('sendToLandingPage', linkName);
           }
         }
     }
