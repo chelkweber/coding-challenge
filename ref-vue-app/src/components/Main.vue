@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1>Grow the Web with Refferals!</h1>
-    <Form></Form>
+    <Form  v-on:createLink="createLink"></Form>
     <RefList v-bind:links="links"></RefList>
   </div>
 </template>
