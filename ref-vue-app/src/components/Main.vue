@@ -2,7 +2,7 @@
   <div class="main">
     <h1>Grow the Web with Refferals!</h1>
     <Form></Form>
-    <RefList></RefList>
+    <RefList v-bind:links="links"></RefList>
   </div>
 </template>
 
@@ -14,7 +14,25 @@
     components: {
       RefList,
       Form
+    },
+    data() {
+      return {
+        links: [
+        {
+          link: 'Spartans'
+        }, {
+          link: 'Wolverines',
+        }, {
+          link: 'Green Wave',
+        }],
+    };
+  },
+  methods: {
+    createLink(newLink) {
+      console.log(this.links);
+      this.links.push(newLink);
     }
+  }
   }
 </script>
 

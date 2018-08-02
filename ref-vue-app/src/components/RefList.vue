@@ -1,7 +1,7 @@
 <template>
   <div class="ref-list">
     <ul>
-      <RefLink></RefLink>
+      <RefLink v-for="link in links"></RefLink>
     </ul>
   </div>
 </template>
@@ -10,6 +10,7 @@
     import RefLink from './RefLink'
     
     export default {
+        props: ['links'],
         data () {
             return {
             }
