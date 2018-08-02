@@ -1,5 +1,7 @@
 <template>
-    
+  <div class="main">
+    <p>This is the Main page</p>
+  </div>
 </template>
 
 <script>

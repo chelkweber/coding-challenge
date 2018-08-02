@@ -1,14 +1,15 @@
 <template>
   <div id="app">
+    <router-link :to="{ name: 'Main' }">Main</router-link>
+    <router-link to="/landing">Landing</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+
   export default {
-    data () {
-        return {
-        }
-    },
+    name: 'App',
     components: {
     }
   }
