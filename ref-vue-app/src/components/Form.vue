@@ -20,7 +20,8 @@
             if (this.link.length > 0) {
               const link = this.link;
               this.$emit('createLink', {
-                link
+                link, 
+                count: 0
               });
               this.link = '';
             }

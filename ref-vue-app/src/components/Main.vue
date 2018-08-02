@@ -2,7 +2,7 @@
   <div class="main">
     <h1>Grow the Web with Refferals!</h1>
     <Form  v-on:createLink="createLink"></Form>
-    <RefList v-bind:links="links"></RefList>
+    <RefList v-bind:links=" links"v-on:updateMain="updateMain(links)"></RefList>
   </div>
 </template>
 
@@ -28,17 +28,30 @@
           link: 'Green Wave',
           count: 0
         }],
-    };
-  },
-  methods: {
-    createLink(newLink) {
-      console.log(this.links);
-      this.links.push(newLink);
+      };
+    },
+    props: ['mainLinks'],
+    methods: {
+      createLink(newLink) {
+        this.links.push(newLink);
+      },
+      updateMain(links) {
+        this.links = links;
+        console.log(this.links);
+      }
     }
-  }
   }
 </script>
 
 <style>
+  
+  .main {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .main h1 {
+  }
     
 </style>

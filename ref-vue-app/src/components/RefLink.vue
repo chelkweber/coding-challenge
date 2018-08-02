@@ -1,10 +1,11 @@
 <template>
   <li class="ref-link">
     <p v-if="!isEditing" v-on:click="updateInfo(link)">
-      <router-link to="/landing">{{link.link}}</router-link>
+<!--      <router-link to="/landing">{{link.link}}</router-link>-->
+      <span>{{link.link}}</span>
     </p>
     <input type='text' v-model="link.link" v-if="isEditing">
-    <p v-on:click="link.count++">{{link.count}}</p>
+    <span v-on:click="link.count++">{{link.count}}</span>
     <button v-on:click="showForm" v-if="!isEditing">Edit</button>
     <button v-on:click="hideForm" v-if="isEditing">Save</button>
     <button v-on:click="deleteLink(link)">Delete</button>
@@ -39,5 +40,28 @@
 </script>
 
 <style>
+  
+  .ref-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .ref-link p {
+    display: inline;
+    text-align: left;
+    width: 40%;
+    flex-shrink: 0;
+  }
+  
+  .ref-link input {
+    display: inline;
+    text-align: left;
+    width: 40%;
+    flex-shrink: 0;
+  }
     
 </style>
