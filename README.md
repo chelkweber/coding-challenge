@@ -16,6 +16,7 @@ https://coding-challenge-cew.herokuapp.com/#/
 
 <a href="https://medium.com/codingthesmartway-com-blog/vue-js-2-quickstart-tutorial-2017-246195cfbdd2">Vue Project Setup</a></br>
 <a href="https://medium.com/netscape/deploying-a-vue-js-2-x-app-to-heroku-in-5-steps-tutorial-a69845ace489">Deploying to Heroku</a>
+< href="https://thenounproject.com/throwawayicons/">The Noun Project</a>
 
 ## Show us your other projects! (optional)
 
