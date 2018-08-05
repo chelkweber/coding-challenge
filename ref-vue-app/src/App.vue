@@ -1,10 +1,5 @@
 <template>
   <div id="app">
-<!--
-    <router-link to="/">Main</router-link>
-    <router-link to="/landing">Landing</router-link>
--->
-<!--    <router-view v-on:sendToLandingPage="sendToLandingPage" v-bind:linkName="linkName"></router-view>-->
     <Landing v-show="showLanding" v-bind:linkName="linkName" v-on:backToMain="backToMain"></Landing>
     <Main v-show="!showLanding" v-on:sendToLandingPage="sendToLandingPage"></Main>
   </div>

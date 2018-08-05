@@ -37,7 +37,6 @@
         this.links.push(newLink);
       },
       sendToLandingPage(linkName) {
-        console.log(linkName + 'main');
         this.$emit('sendToLandingPage', linkName);
       }
     }

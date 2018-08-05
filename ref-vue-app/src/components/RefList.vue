@@ -30,11 +30,8 @@
             this.links.splice(linkIndex, 1);
           },
           updateInfo(link) {
-            //console.log(link);
             var linkIndex = this.links.indexOf(link);
-            //console.log(linkIndex);
             this.links[linkIndex].count = link.count
-            //console.log(this.links);
             this.updateMain(this.links);
           },
           sendToLandingPage(linkName) {

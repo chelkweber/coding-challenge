@@ -1,7 +1,6 @@
 <template>
   <li class="ref-link">
     <div class="title">
-<!--      <router-link to="/landing" target="_blank" v-if="!isEditing">{{link.link}}</router-link>-->
       <a hred="#" v-on:click="sendToLandingPage(link.link); link.count++" v-if="!isEditing">{{link.link}}</a>
       <input type='text' v-model="link.link" v-if="isEditing" v-on:keyup.enter="hideForm">
       <div class="bottom-border" v-bind:class="{isEditing}"></div>
@@ -41,7 +40,6 @@
         },
         sendToLandingPage(linkName) {
           this.$emit('sendToLandingPage', linkName);
-          console.log(linkName);
         }
       }
     }
