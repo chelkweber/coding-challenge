@@ -1,12 +1,11 @@
 
 ## Project Overview
 
-This is an app using to track marketing refferal links. The solution is front-end focused using html, css, javascript and Vue.js. I chose to use Vue.js because that is the framework that I have the most experience with. I set up each refferal link, the refferal list and the form as different components. I set up the initial links as an array and passed that array to the referral list as a property, which was looped through to list out each link. The form adds a new link to the link array. I also set up router using Vue Router, which displays the Main component on the homepage and the Landing component at /landing. 
+This is an app using to track marketing refferal links. The solution is front-end focused using html, css, javascript and Vue.js. I chose to use Vue.js because that is the framework that I have the most experience with. I set up each refferal link, the refferal list and the form as different components. I set up the initial links as an array and passed that array to the referral list as a property, which was looped through to list out each link. The form adds a new link to the link array. I also used v-show to display the correct page. 
 
 ## Some goals that I wish I would have accomplished: 
 - I started by building in React, but decided to switch to Vue since I am more familar. I would have liked to build the app in React. 
-- I had trouble getting the data (Link name and Link Count) to stay updated when routing to a new page. I was able to keep the count updated by adding a target=blank to the link, but was unable to get the Landing Page to have the current link name.
-- I would have liked to add some animations and enhanced UI/UX features with more time.
+- I had trouble getting the data (Link name and Link Count) to stay updated when routing to a new page. Because of this I switched from using routing to using v-show. With v-show I was unable to get the url to display '/landing/?link={link_title}'.
 
 ### Deployment
 
