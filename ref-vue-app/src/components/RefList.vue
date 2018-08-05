@@ -7,7 +7,7 @@
       <p class="delete">Delete</p>
     </div>
     <ul>
-      <RefLink v-on:deleteLink="deleteLink" v-on:sendToLandingPage="sendToLandingPage" v-for="link in links" :link.sync="link"></RefLink>
+      <RefLink v-on:deleteLink="deleteLink" v-on:sendToLandingPage="sendToLandingPage" v-for="link in links" :link.sync="link" class="link"></RefLink>
     </ul>
   </div>
 </template>
@@ -59,6 +59,7 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    font-weight: 600;
   }
   
   .labels .title {
@@ -75,6 +76,8 @@
   .ref-list ul{
     list-style: none;
     padding: 0;
+    max-height: 300px;
+    overflow-x: scroll;
   }
     
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div class="main">
     <h1>Grow the Web with Refferals!</h1>
+    <img src="../assets/ambassador-logo.jpg" alt="Ambassador Software" />
     <Form  v-on:createLink="createLink"></Form>
     <RefList v-bind:links="links" v-on:sendToLandingPage="sendToLandingPage"></RefList>
   </div>
@@ -20,13 +21,13 @@
         links: [
         {
           link: 'Spartans',
-          count: 0
+          count: 6
         }, {
           link: 'Wolverines',
-          count: 0
+          count: 2
         }, {
           link: 'Green Wave',
-          count: 0
+          count: 10
         }],
       };
     },
@@ -51,7 +52,11 @@
     margin: 0 auto;
   }
   
-  .main h1 {
+  .main img {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
   }
     
 </style>
