@@ -6,7 +6,7 @@ This is an app using to track marketing refferal links. The solution is front-en
 ## Some goals that I wish I would have accomplished: 
 - I started by building in React, but decided to switch to Vue since I am more familar. I would have liked to build the app in React. 
 - I had trouble getting the data (Link name and Link Count) to stay updated when routing to a new page. I was able to keep the count updated by adding a target=blank to the link, but was unable to get the Landing Page to have the current link name.
-- I would have liked to add some animations and enhanced UI/UX features with more time. 
+- I would have liked to add some animations and enhanced UI/UX features with more time.
 
 ### Deployment
 
@@ -16,6 +16,7 @@ https://coding-challenge-cew.herokuapp.com/#/
 
 <a href="https://medium.com/codingthesmartway-com-blog/vue-js-2-quickstart-tutorial-2017-246195cfbdd2">Vue Project Setup</a></br>
 <a href="https://medium.com/netscape/deploying-a-vue-js-2-x-app-to-heroku-in-5-steps-tutorial-a69845ace489">Deploying to Heroku</a>
+< href="https://thenounproject.com/throwawayicons/">The Noun Project</a>
 
 ## Show us your other projects! (optional)
 
